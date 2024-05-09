@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fin Sync.</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body class="bg-color-primary tracking-wider">
+    <header class="sticky top-0 z-50">
+      <nav class="container flex justify-between items-center">
+        <div class="py-5 text-color-secondary font-bold text-3xl">
+          <a href="#home"> <span class="text-color-white">Fin</span>Sync. </a>
+        </div>
+        <div>
+          <ul class="hidden lg:flex items-center space-x-6 text-color-white">
+            <li>
+              <a
+                href="#home"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#features"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#how-it-works"
+                class="hover:text-color-secondary ease-in duration-200"
+                >How It Works</a
+              >
+            </li>
+            <li>
+              <a
+                href="#blog"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="#download-app"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Download App</a
+              >
+            </li>
+
+            <li>
+              <button
+                class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200"
+              >
+                free trial
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile screen  -->
+        <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div
+          id="menu"
+          class="hidden bg-color-primary-dark h-[100vh] absolute inset-0 text-color-white"
+        >
+          <ul class="h-full grid place-items-center py-20">
+            <li>
+              <a
+                id="hLink"
+                href="#home"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#features"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#how-it-works"
+                class="hover:text-color-secondary ease-in duration-200"
+                >How It Works</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#blog"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                id="hLink"
+                href="#download-app"
+                class="hover:text-color-secondary ease-in duration-200"
+                >Download App</a
+              >
+            </li>
+
+            <li><button class="btn">free trial</button></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="relative bg-color-primary-light">
+      <div class="container py-20">
+        <div class="flex flex-col items-center z-20 md:flex-row">
+          <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+            <h1 class="title mb-4">Awesome App for Your Financial.</h1>
+            <p class="leading-relaxed mb-10">
+              This should be used to tell a story and let your users know a
+              little more about app and it’s use, How can benefit them.
+            </p>
+            <button class="btn">Learn more</button>
+          </div>
+
+          <div class="md:w-1/2">
+            <img src="./img/hero4.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container py-20 ">
+        <div class="text-center m-auto mb-20 md:w-1/2">
+          <h4 class="font-bold text-color-secondary mb-4">Our Future</h4>
+          <h1 class="title text-color-white">
+            Easy To Manage Your All Payments By Our App
+          </h1>
+        </div>
+
+        <div
+          class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8"
+        >
+          <!-- card no 1 -->
+          <div
+            class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200"
+          >
+            <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+              <i class="fa-solid fa-calendar-days text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold py-4 text-color-white">
+              Expense Trackering
+            </h3>
+            <p class="leading-relaxed text-color-white">
+              We use an application designed a testing gnose to keep away
+            </p>
+          </div>
+
+          <!-- card no 2 -->
+          <div
+            class="bg-color-primary-dark border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer"
+          >
+            <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+              <i class="fa-solid fa-chart-column text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold py-4 text-color-white">
+              Finance Snapshot
+            </h3>
+            <p class="leading-relaxed text-color-white">
+              We use an application designed a testing gnose to keep away
+            </p>
+          </div>
+
+          <!-- card no 3 -->
+          <div
+            class="border-2 border-solid border-color-gray text-center py-20 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200"
+          >
+            <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+              <i class="fa-solid fa-phone text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold py-4 text-color-white">
+              Support 24/24
+            </h3>
+            <p class="leading-relaxed text-color-white">
+              We use an application designed a testing gnose to keep away
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="bg-color-primary-light">
+      <div class="container py-20">
+        <div class="text-center m-auto mb-20 md:w-1/2">
+          <h4 class="font-bold text-color-secondary mb-4">How It Works</h4>
+          <h1 class="title text-color-white">Grow Up Your Money Saving</h1>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6"
+        >
+          <!-- card 1  -->
+          <div class="text-center cursor-pointer">
+            <div
+              class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200"
+            >
+              <p class="text-color-white text-6xl">1</p>
+            </div>
+            <h3 class="text-xl font-bold py-4 text-color-white">
+              Install The App
+            </h3>
+            <p class="leading-relaxed text-color-white">
+              We use an application designed a testing gnose to keep away
+            </p>
+          </div>
+
+          <!-- card 2  -->
+          <div class="text-center cursor-pointer">
+            <div
+              class="relative inline-block px-6 py-3 rounded-lg cursor-pointer bg-color-secondary"
+            >
+              <p class="text-color-white text-6xl">2</p>
+            </div>
+            <h3 class="text-xl font-bold py-4 text-color-white">
+              Setup Your Profile
+            </h3>
+            <p class="leading-relaxed text-color-white">
+              We use an application designed a testing gnose to keep away
+            </p>
+          </div>
+          <!-- card 3  -->
+          <div class="text-center cursor-pointer">
+            <div
+              class="relative bg-color-primary-dark inline-block px-6 py-3 rounded-lg cursor-pointer hover:bg-color-secondary ease-in duration-200"
+            >
+              <p class="text-6xl text-color-white">3</p>
+            </div>
+            <h3 class="text-xl font-bold py-4 text-color-white">
+              Enjoy The Features!
+            </h3>
+            <p class="leading-relaxed text-color-white">
+              We use an application designed a testing gnose to keep away
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <div class="container py-20 text-color-white">
+        <div class="text-center m-auto mb-20 md:w-1/2">
+          <h4 class="font-bold text-color-secondary mb-4">
+            Innovation And Quality Improvement
+          </h4>
+          <h1 class="title">Latest Updates, Solutions And Company News</h1>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <!-- card no 1 -->
+          <div>
+            <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+              <img
+                src="./img/blog1.jpg"
+                alt=""
+                class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out"
+              />
+            </div>
+
+            <div>
+              <div class="flex items-center gap-5 py-5">
+                <p>20 August 2022</p>
+                <p>1 min read</p>
+              </div>
+
+              <a
+                href="#blog"
+                class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline"
+                >Four ways to cheer yourself up on Blue Monday!</a
+              >
+
+              <p class="leading-relaxed my-5">
+                On the second edition of Serious Business, Inc. editor Jim
+                Ledbetter and Fusion senior editor Salmon debate...
+              </p>
+
+              <a
+                href="#blog"
+                class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out"
+              >
+                <span
+                  class="tracking-wider capitalize underline hover:no-underline"
+                  >Read more</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <!-- card no 2 -->
+          <div>
+            <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+              <img
+                src="./img/blog2.jpg"
+                alt=""
+                class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out"
+              />
+            </div>
+
+            <div>
+              <div class="flex items-center gap-5 py-5">
+                <p>20 August 2022</p>
+                <p>1 min read</p>
+              </div>
+
+              <a
+                href="#blog"
+                class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline"
+                >How to Organize Your budget for Maximum Productivity?</a
+              >
+
+              <p class="leading-relaxed my-5">
+                Global provider connected products for consumers, and
+                enterprises worldwide, supply chain control is everything...
+              </p>
+
+              <a
+                href="#blog"
+                class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out"
+              >
+                <span
+                  class="tracking-wider capitalize underline hover:no-underline"
+                  >Read more</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <!-- card no 3 -->
+          <div>
+            <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+              <img
+                src="./img/blog3.jpg"
+                alt=""
+                class="lg:h-full w-full hover:scale-125 transition duration-300 ease-in-out"
+              />
+            </div>
+
+            <div>
+              <div class="flex items-center gap-5 py-5">
+                <p>20 August 2022</p>
+                <p>1 min read</p>
+              </div>
+
+              <a
+                href="#blog"
+                class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline"
+                >Should Small Businesses Be Entitled to system?</a
+              >
+
+              <p class="leading-relaxed my-5">
+                Our team provides skilled & experienced managers who know the
+                intricacies of this vertical and focus...
+              </p>
+
+              <a
+                href="#blog"
+                class="inline-block font-bold hover:text-color-secondary transition-all duration-300 ease-in-out"
+              >
+                <span
+                  class="tracking-wider capitalize underline hover:no-underline"
+                  >Read more</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download-app" class="bg-color-primary-light">
+      <div class="container h-[80vh] grid place-items-center">
+        <div class="text-center md:w-2/3 m-auto">
+          <h1 class="title">Download App Now And Save Your Money</h1>
+          <p class="leading-relaxed pt-5">
+            Serving an impressive list of long-term money with experience and
+            expertise in multiple industries.
+          </p>
+
+          <div
+            class="flex flex-col md:flex-row items-center justify-center gap-5 pt-10"
+          >
+            <a
+              href="#"
+              class="bg-color-white h-16 w-44 grid place-items-center rounded-lg hover:opacity-70"
+            >
+              <img src="./img/ios-store-dark.png" alt="" />
+            </a>
+            <a
+              href="#"
+              class="bg-color-white h-16 w-44 grid place-items-center rounded-lg hover:opacity-70"
+            >
+              <img src="./img/g-play-dark.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-gray-200 bg-color-primary-dark">
+      <div class="container mx-auto py-14 px-6">
+        <div class="grid md:grid-cols-12 grid-cols-1 gap-7">
+          <div class="lg:col-span-4 col-span-12">
+            <div class="py-2 text-color-secondary font-bold text-3xl">
+              <a href="#home"> <span class="text-color-white">Fin</span>Sync. </a>
+            </div>
+            </a>
+            <p class="mt-6">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+              veritatis sed illo amet dolor sunt facere suscipit, vel est
+              voluptate beatae architecto esse impedit eveniet eligendi
+              provident ipsa animi consequatur sint inventore blanditiis. Quasi,
+              deleniti?
+            </p>
+          </div>
+
+          <div class="lg:col-span-2 md:col-span-4 col-span-12">
+            <h5 class="tracking-wide text-gray-100 font-semibold">Company</h5>
+            <ul class="list-none mt-6 space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="hover:text-gray-400 transition-all duration-500 ease-in-out"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#features"
+                  class="hover:text-gray-400 transition-all duration-500 ease-in-out"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#how-it-works"
+                  class="hover:text-gray-400 transition-all duration-500 ease-in-out"
+                  >How It Works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="hover:text-gray-400 transition-all duration-500 ease-in-out"
+                  >Blog</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-3 md:col-span-4 col-span-12">
+            <h5 class="tracking-wide text-gray-100 font-semibold">
+              Important Links
+            </h5>
+            <ul class="list-none mt-6 space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-gray-400 transition-all duration-500 ease-in-out"
+                  >Terms of Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-gray-400 transition-all duration-500 ease-in-out"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-gray-400 transition-all duration-500 ease-in-out"
+                  >Documentation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-3 md:col-span-4 col-span-12">
+            <h5 class="tracking-wide text-gray-100 font-semibold">
+              Newsletter
+            </h5>
+            <p>Sign up and receive the latest tips via email.</p>
+            <form action="">
+              <div class="my-3">
+                <label for="email-input"
+                  >Write your email <span class="text-red-600">*</span></label
+                >
+                <input
+                  type="email"
+                  id="email-input"
+                  class="mt-3 w-full py-2 px-3 h-10 bg-transparent rounded outline-none border border-gray-500 focus:border-[#FFCDA3] focus:ring-0"
+                  placeholder="name@example.com"
+                />
+              </div>
+
+              <input
+                type="submit"
+                class="py-2 px-5 border tracking-wide duration-500 text-base text-center bg-[#FFCDA3] hover:bg-[#FFCD88] border-[#FFCDA3] hover:border-[#FFCD88] text-black rounded-md w-full"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-700">
+        <div class="md:text-left text-center container mx-auto py-7 px-6">
+          <p class="mb-0">
+            &copy;
+            <span> 2024 </span>
+            Ermal Salihaj Team
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const navbar = document.querySelector("header");
+
+      const sectionn = document.querySelectorAll("section");
+      const navlinkss = document.querySelectorAll("nav ul li a");
+
+      window.onscroll = () => {
+        if (window.scrollY > 100) {
+          navbar.classList.add("bg-color-primary-dark");
+          navbar.classList.add("border-b");
+          navbar.classList.add("border-color-gray");
+        } else {
+          navbar.classList.remove("bg-color-primary-dark");
+          navbar.classList.remove("border-b");
+          navbar.classList.remove("border-color-gray");
+        }
+
+        // active link
+        let current = "home";
+
+        sectionn.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute("id");
+          }
+        });
+        navlinkss.forEach((item) => {
+          item.classList.remove("text-color-secondary");
+          if (item.href.includes(current)) {
+            item.classList.add("text-color-secondary");
+          }
+        });
+      };
+
+      // Mobile menu
+      const hamburger = document.querySelector("#hamburger");
+      const menu = document.querySelector("#menu");
+      const hLink = document.querySelectorAll("#hLink");
+      const faSolid = document.querySelector(".fa-solid");
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        faSolid.classList.toggle("fa-xmark");
+      });
+
+      hLink.forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+          faSolid.classList.toggle("fa-xmark");
+        });
+      });
+
+      // testimonial
+      const userTexts = document.getElementsByClassName("user-text");
+      const userPics = document.getElementsByClassName("user-pic");
+
+      function showReview() {
+        for (userPic of userPics) {
+          userPic.classList.remove("active-pic");
+        }
+        for (userText of userTexts) {
+          userText.classList.remove("active-text");
+        }
+
+        let i = Array.from(userPics).indexOf(event.target);
+
+        userPics[i].classList.add("active-pic");
+        userTexts[i].classList.add("active-text");
+      }
+
+      const toggleBtn = document.getElementById("toggleBtn");
+
+      const card_1_front = document.querySelector("#card_1_front");
+      const card_1_back = document.querySelector("#card_1_back");
+
+      const card_2_front = document.querySelector("#card_2_front");
+      const card_2_back = document.querySelector("#card_2_back");
+
+      const card_3_front = document.querySelector("#card_3_front");
+      const card_3_back = document.querySelector("#card_3_back");
+
+      toggleBtn.addEventListener("change", () => {
+        card_1_front.classList.toggle("-rotate-y-180");
+        card_1_back.classList.toggle("rotate-y-180");
+
+        card_2_front.classList.toggle("-rotate-y-180");
+        card_2_back.classList.toggle("rotate-y-180");
+
+        card_3_front.classList.toggle("-rotate-y-180");
+        card_3_back.classList.toggle("rotate-y-180");
+      });
+    </script>
+  </body>
+</html>
